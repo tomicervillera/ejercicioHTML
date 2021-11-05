@@ -1,0 +1,17 @@
+.gradiente {
+    background-color: $c-main;
+    width: 50%;
+    height: 350px;
+
+    .btn-verde {
+        background-color: greenyellow;
+
+        &:hover {
+            background-color: darken(greenyellow, 25%);
+        }
+    }
+
+    &.rojo {
+        background-color: red;
+    }
+}

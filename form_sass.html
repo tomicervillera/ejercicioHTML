@@ -1,0 +1,213 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.min.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div class="container">
+    <table border="2">
+        <tr>
+            <td align="center">
+                <strong>ID</strong>
+            </td>
+            <td align="right">
+                Apellido
+                <a href="?ordenar=ASC"> Ordenar ASC </a>
+                <form action="">
+                    <input type="hidden" name="ordenar" value="ASC" />
+                    <input type="submit" value="Ordenar ASC" />
+                </form>
+
+            </td>
+            <td align="left">
+                Nombre
+                <img src="" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                23
+            </td>
+            <td>
+                Butti
+            </td>
+            <td>
+                Julián
+            </td>
+        </tr>
+    </table>
+
+    
+
+
+    <form action="/api/procesar" method="GET">
+        <!-- /api/procesar?par1=val1&par2=val2 -->
+
+    </form>
+
+    <form action="">
+
+    </form>
+
+    <form action="https://formspree.io/f/2323232" method="POST" enctype="multipart/form-data">
+        Nombre :
+        <input name="camponombre" type="text" value="Mi nombre" placeholder="Complete su nombre" required /><br /> Email :
+        <input name="campoemail" type="email" value="Mi email" placeholder="Complete su email" /><br /> Texto:
+        <textarea name="campotexto" placeholder="Escriba su texto">Valor por defecto</textarea><br /> Acepta los términos y condiciones?
+        <input type="checkbox" name="tilde" value="1" /> SI
+        <br /><br /> Color preferido:
+        <input type="radio" name="color" value="rojo" /> Rojo<br />
+        <input type="radio" name="color" value="verde" /> Verde <br />
+        <input type="radio" name="color" value="azul" /> Azul<br /> Edad: <input type="number" max="150" min="0" name="edad" placeholder="Complete con su edad" required />
+
+        <input name="boton" type="submit" value="Enviar Formulario" />
+
+
+        <input type="reset" value="Vaciar Formulario" />
+        <button type="reset"><i class=""></i> Formulario - <strong>Limpiar</strong></button>
+
+        <input type="file" name="cv" placeholder="Adjuntá tu CV" />
+
+        <input type="button" value="Volver al menú" onclick="" />
+
+        <input type="hidden" name="fecha" value="29 de octubre" />
+        <input type="hidden" name="usuario" value="[ID]" />
+
+    </form>
+
+
+
+    <form action="resultados.html" method="POST">
+        <input type="text" name="q" value="hola" placeholder="Ingrese su búsqueda" />
+        <input type="submit" value="Buscar" />
+    </form>
+    <!--
+        Si fuera GET
+        resultados.html?q=hola
+    -->
+
+    <form action="resultados.html?orden=DESC" method="POST">
+        <input type="text" name="cuadro_deBusqueda" value="hola" placeholder="Ingrese su búsqueda" />
+        <input type="submit" value="Buscar" />
+    </form>
+
+
+
+
+    <div class="gradiente rojo">
+        <div id="formulario1" class="borderojo">
+            <form id="form" action="resultados.html" method="POST">
+                <input id="q" type="text" name="q" value="hola" placeholder="Ingrese su búsqueda" />
+                <input id="enviar" class="btn btn-verde hover" type="submit" value="Buscar" />
+            </form>
+        </div>
+        <div id="formulario2" class="borderojo">
+            <form id="form" action="resultados.html" method="POST">
+                <input id="q" type="text" name="q" value="hola" placeholder="Ingrese su búsqueda" />
+                <input id="enviar" class="btn btn-verde" type="submit" value="Buscar" />
+            </form>
+        </div>
+        <div id="formulario3" class="borderojo">
+            <form id="form" action="resultados.html" method="POST">
+                <input id="q" type="text" name="q" value="hola" placeholder="Ingrese su búsqueda" />
+                <input id="enviar" class="btn btn-verde" type="submit" value="Buscar" />
+            </form>
+        </div>
+        <div id="formulario4" class="borderojo">
+            <form id="form" action="resultados.html" method="POST">
+                <input id="q" type="text" name="q" value="hola" placeholder="Ingrese su búsqueda" />
+                <input id="enviar" class="btn btn-verde" type="submit" value="Buscar" />
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+    <style>
+        /* Hoja de estilo Interna */
+        
+        .borderojo {
+            float: left;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+        
+        div {
+            background-color: #fafafa;
+            color: black;
+        }
+        
+        #formulario1 .btn {
+            background-color: yellow;
+        }
+        
+        td:first {
+            font-weight: bold;
+        }
+        
+        div,
+        table,
+        h1,
+        textarea {
+            margin: 50px;
+        }
+        
+        table {
+            width: 50%;
+        }
+        
+        #formulario1 {
+            /* numeral + id para seleccionar elemento por id */
+            width: 300px;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+            border-top: 5px;
+            padding-top: 20px;
+            padding-right: 20px;
+            padding-left: 10px;
+            padding-bottom: 0px;
+            padding: 10px 20px 20px 0px;
+            margin: 10px;
+            margin-right: 5px;
+        }
+        
+        .btn {
+            /* punto + clase para seleccionar elemento por clase */
+            background-color: #f0f0f0;
+            border: 1px solid #000;
+            color: black;
+        }
+        
+        .btn-verde {
+            background-color: #00ff00;
+        }
+    </style>
+
+    <input type="button" class="btn" style="background-color: red;" value="Error" /> 1- Armar repo GIT 2- Armar una TABLA 3- Ordenar en la tabla un formulario de forma tal que se visualice: |Nombre |Apellido | |Comentario | (textarea) | email | | boton
+    de enviar |
+
+    <form>
+        <table>
+            <tr>
+                <td>Nombre</td>
+                <td><input type="text" name="nombre" /></td>
+            </tr>
+        </table>
+    </form>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
