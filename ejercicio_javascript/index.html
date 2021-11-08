@@ -1,0 +1,64 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Ejercicio JS</title>
+
+    <body>
+        <script>
+            //Ejercicio 1
+            /* var edad = prompt('Introduce tu edad: ');
+            if (edad >= 18) {
+                console.log('Puedes conducir');
+                document.write("<h1> Puedes conducir.<h1>");
+
+            } else {
+                console.log('No puedes conducir');
+                document.write("<h1> No puedes conducir.<h1>");
+            } */
+
+            //Ejercicio 2
+            /*var nota = prompt('Introduce la nota: ');
+            switch (true) {
+                case (nota >= 0 && nota < 3):
+                    document.write("<h1> Muy deficiente.<h1>");
+                    break;
+                case (nota >= 3 && nota < 5):
+                    document.write("<h1> Insuficiente.<h1>");
+                    break;
+                case (nota >= 5 && nota < 6):
+                    document.write("<h1> Suficiente.<h1>");
+                    break;
+                case (nota >= 6 && nota < 7):
+                    document.write("<h1> Bien.<h1>");
+                    break;
+                    case (nota >= 7 && nota <= 9):
+                    document.write("<h1> Notable.<h1>");
+                    break;
+                case (nota === 10):
+                    document.write("<h1> Sobresaliente.<h1>");
+                    break;
+                default:
+            }*/
+
+            //Ejercicio 3 Realiza un script que pida nUmeros hasta que se pulse "cancelar”. 
+            //Si no es un nUmero deberé indicarse con un «alert» y seguir pidiendo. Al salir con "cancelar” deberé indicarse la suma total de los nUmeros introducidos.
+            
+            total = 0;
+            do {
+                numero = prompt('Introduce numero: ');
+                if (isNaN(parseInt(numero)) == false) {
+                    total += parseInt(numero);
+                } else {
+                    if (numero != null) {
+                        alert(numero + " No es un número");
+                    }
+                }
+            } while (numero != null)
+            document.write(total);
+
+        </script>
+    </body>
+    </head>
+
+</html>
